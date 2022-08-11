@@ -11,17 +11,22 @@ label {
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
-    margin: 0 auto;
+      width: 1170px;
+      margin: 0 auto;
   }
+}
+
+.label {
+  margin: 0.5em;
 }
 
 .col-valor-header {
   width: 120px;
+  text-align: center !important;
 }
 
 .col-valor-content {
-  text-align: right;
+  text-align: right !important ;
 }
 
 .col-data-header {
@@ -29,24 +34,24 @@ label {
 }
 
 .col-data-content {
-  text-align: center;
-}
-
-.col-data-content {
   text-align: center !important;
 }
 
 .col-acoes-header {
-  width: 115px;
+width: 115px;
 }
 
 .col-acoes {
   width: 115px;
-  text-align: center !important;
+  text-align: center;
 }
 
-.col-acoes .p-button {
-  margin: 1px;
+.col-acoes > a {
+  margin-right: 5px;
+}
+
+button.p-button {
+margin: 0 .25em;
 }
 
 @media (min-width: 40em) {
@@ -67,15 +72,26 @@ label {
   }
 
   .col-acoes-header {
-    width: 115px;
+    width: 120px;
   }
 
   .col-acoes {
-    width: 115px;
+    width: 120px;
     text-align: center !important;
   }
 
-  .col-acoes .p-button {
-    margin: 1px;
-  }
+}
+
+a {
+color: #337ab7;
+text-decoration: none;
+}
+
+a:hover, a:focus {
+text-decoration: underline;
+}
+
+a.p-button:hover,
+a.p-button:focus {
+text-decoration: none;
 }

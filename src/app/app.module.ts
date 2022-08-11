@@ -1,28 +1,42 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { ButtonModule } from 'primeng/button';
+import { CalendarModule } from 'primeng/calendar';
+import { DropdownModule } from 'primeng/dropdown';
+import { InputNumberModule } from 'primeng/inputnumber';
+import { InputTextModule } from 'primeng/inputtext';
+import { SelectButtonModule } from 'primeng/selectbutton';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
+
+import { AppComponent } from './app.component';
+import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { LancamentoPesquisaComponent } from './lancamento-pesquisa/lancamento-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PessoaPesquisaComponent } from './pessoa-pesquisa/pessoa-pesquisa.component';
+import { LancamentoPessoaComponent } from './lancamento-pessoa/lancamento-pessoa.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LancamentoPesquisaComponent,
     NavbarComponent,
-    PessoaPesquisaComponent
+    PessoaPesquisaComponent,
+    LancamentoCadastroComponent,
+    LancamentoPessoaComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
-    InputTextModule,
+    BrowserModule,
     ButtonModule,
+    CalendarModule,
+    DropdownModule,
+    InputNumberModule,
+    InputTextModule,
+    SelectButtonModule,
     TableModule,
     TooltipModule
   ],
