@@ -6,6 +6,7 @@ import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputNumberModule } from 'primeng/inputnumber';
+import {InputMaskModule} from 'primeng/inputmask';
 import { InputTextModule } from 'primeng/inputtext';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { TableModule } from 'primeng/table';
@@ -34,6 +35,7 @@ import { LancamentoPessoaComponent } from './lancamento-pessoa/lancamento-pessoa
     ButtonModule,
     CalendarModule,
     DropdownModule,
+    InputMaskModule,
     InputNumberModule,
     InputTextModule,
     SelectButtonModule,
